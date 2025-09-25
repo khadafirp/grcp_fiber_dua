@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package greeter;
+
+option go_package = "grpc_fiber_dua/proto/greeter";
+
+service BarangService {
+  rpc AllBarang (BarangRequest) returns (BarangReply);
+}
+
+message BarangRequest {
+  string name = 1;
+}
+
+message BarangReply {
+  string message = 1;
+}
