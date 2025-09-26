@@ -1,4 +1,4 @@
-module grpc_fiber_dua
+module github.com/khadafirp/grpc_fiber_dua
 
 go 1.25.0
 

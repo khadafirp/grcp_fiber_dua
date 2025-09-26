@@ -1,7 +1,7 @@
 package main
 
 import (
-	"grpc_fiber_dua/server"
+	"github.com/khadafirp/grpc_fiber_dua/server"
 )
 
 func main() {

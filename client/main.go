@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	pb "grpc_fiber_dua/grpc_fiber_dua/proto/greeter"
+	pb "github.com/khadafirp/grpc_fiber_dua/grpc_fiber_dua/proto/greeter"
 
 	"github.com/gofiber/fiber/v2"
 	"google.golang.org/grpc"
