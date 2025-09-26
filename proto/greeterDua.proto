@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package greeter;
+package greeterDua;
 
 option go_package = "grpc_fiber_dua/proto/greeter";
 

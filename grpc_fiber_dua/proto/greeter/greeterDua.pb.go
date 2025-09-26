@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.9
 // 	protoc        v6.32.1
-// source: proto/greeter.proto
+// source: proto/greeterDua.proto
 
 package greeter
 
@@ -30,7 +30,7 @@ type BarangRequest struct {
 
 func (x *BarangRequest) Reset() {
 	*x = BarangRequest{}
-	mi := &file_proto_greeter_proto_msgTypes[0]
+	mi := &file_proto_greeterDua_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -42,7 +42,7 @@ func (x *BarangRequest) String() string {
 func (*BarangRequest) ProtoMessage() {}
 
 func (x *BarangRequest) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_greeter_proto_msgTypes[0]
+	mi := &file_proto_greeterDua_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -55,7 +55,7 @@ func (x *BarangRequest) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BarangRequest.ProtoReflect.Descriptor instead.
 func (*BarangRequest) Descriptor() ([]byte, []int) {
-	return file_proto_greeter_proto_rawDescGZIP(), []int{0}
+	return file_proto_greeterDua_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *BarangRequest) GetName() string {
@@ -74,7 +74,7 @@ type BarangReply struct {
 
 func (x *BarangReply) Reset() {
 	*x = BarangReply{}
-	mi := &file_proto_greeter_proto_msgTypes[1]
+	mi := &file_proto_greeterDua_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -86,7 +86,7 @@ func (x *BarangReply) String() string {
 func (*BarangReply) ProtoMessage() {}
 
 func (x *BarangReply) ProtoReflect() protoreflect.Message {
-	mi := &file_proto_greeter_proto_msgTypes[1]
+	mi := &file_proto_greeterDua_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -99,7 +99,7 @@ func (x *BarangReply) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use BarangReply.ProtoReflect.Descriptor instead.
 func (*BarangReply) Descriptor() ([]byte, []int) {
-	return file_proto_greeter_proto_rawDescGZIP(), []int{1}
+	return file_proto_greeterDua_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *BarangReply) GetMessage() string {
@@ -109,38 +109,39 @@ func (x *BarangReply) GetMessage() string {
 	return ""
 }
 
-var File_proto_greeter_proto protoreflect.FileDescriptor
+var File_proto_greeterDua_proto protoreflect.FileDescriptor
 
-const file_proto_greeter_proto_rawDesc = "" +
+const file_proto_greeterDua_proto_rawDesc = "" +
 	"\n" +
-	"\x13proto/greeter.proto\x12\agreeter\"#\n" +
+	"\x16proto/greeterDua.proto\x12\n" +
+	"greeterDua\"#\n" +
 	"\rBarangRequest\x12\x12\n" +
 	"\x04name\x18\x01 \x01(\tR\x04name\"'\n" +
 	"\vBarangReply\x12\x18\n" +
-	"\amessage\x18\x01 \x01(\tR\amessage2J\n" +
-	"\rBarangService\x129\n" +
-	"\tAllBarang\x12\x16.greeter.BarangRequest\x1a\x14.greeter.BarangReplyB\x1eZ\x1cgrpc_fiber_dua/proto/greeterb\x06proto3"
+	"\amessage\x18\x01 \x01(\tR\amessage2P\n" +
+	"\rBarangService\x12?\n" +
+	"\tAllBarang\x12\x19.greeterDua.BarangRequest\x1a\x17.greeterDua.BarangReplyB\x1eZ\x1cgrpc_fiber_dua/proto/greeterb\x06proto3"
 
 var (
-	file_proto_greeter_proto_rawDescOnce sync.Once
-	file_proto_greeter_proto_rawDescData []byte
+	file_proto_greeterDua_proto_rawDescOnce sync.Once
+	file_proto_greeterDua_proto_rawDescData []byte
 )
 
-func file_proto_greeter_proto_rawDescGZIP() []byte {
-	file_proto_greeter_proto_rawDescOnce.Do(func() {
-		file_proto_greeter_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_proto_greeter_proto_rawDesc), len(file_proto_greeter_proto_rawDesc)))
+func file_proto_greeterDua_proto_rawDescGZIP() []byte {
+	file_proto_greeterDua_proto_rawDescOnce.Do(func() {
+		file_proto_greeterDua_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_proto_greeterDua_proto_rawDesc), len(file_proto_greeterDua_proto_rawDesc)))
 	})
-	return file_proto_greeter_proto_rawDescData
+	return file_proto_greeterDua_proto_rawDescData
 }
 
-var file_proto_greeter_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
-var file_proto_greeter_proto_goTypes = []any{
-	(*BarangRequest)(nil), // 0: greeter.BarangRequest
-	(*BarangReply)(nil),   // 1: greeter.BarangReply
+var file_proto_greeterDua_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
+var file_proto_greeterDua_proto_goTypes = []any{
+	(*BarangRequest)(nil), // 0: greeterDua.BarangRequest
+	(*BarangReply)(nil),   // 1: greeterDua.BarangReply
 }
-var file_proto_greeter_proto_depIdxs = []int32{
-	0, // 0: greeter.BarangService.AllBarang:input_type -> greeter.BarangRequest
-	1, // 1: greeter.BarangService.AllBarang:output_type -> greeter.BarangReply
+var file_proto_greeterDua_proto_depIdxs = []int32{
+	0, // 0: greeterDua.BarangService.AllBarang:input_type -> greeterDua.BarangRequest
+	1, // 1: greeterDua.BarangService.AllBarang:output_type -> greeterDua.BarangReply
 	1, // [1:2] is the sub-list for method output_type
 	0, // [0:1] is the sub-list for method input_type
 	0, // [0:0] is the sub-list for extension type_name
@@ -148,26 +149,26 @@ var file_proto_greeter_proto_depIdxs = []int32{
 	0, // [0:0] is the sub-list for field type_name
 }
 
-func init() { file_proto_greeter_proto_init() }
-func file_proto_greeter_proto_init() {
-	if File_proto_greeter_proto != nil {
+func init() { file_proto_greeterDua_proto_init() }
+func file_proto_greeterDua_proto_init() {
+	if File_proto_greeterDua_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_greeter_proto_rawDesc), len(file_proto_greeter_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_proto_greeterDua_proto_rawDesc), len(file_proto_greeterDua_proto_rawDesc)),
 			NumEnums:      0,
 			NumMessages:   2,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
-		GoTypes:           file_proto_greeter_proto_goTypes,
-		DependencyIndexes: file_proto_greeter_proto_depIdxs,
-		MessageInfos:      file_proto_greeter_proto_msgTypes,
+		GoTypes:           file_proto_greeterDua_proto_goTypes,
+		DependencyIndexes: file_proto_greeterDua_proto_depIdxs,
+		MessageInfos:      file_proto_greeterDua_proto_msgTypes,
 	}.Build()
-	File_proto_greeter_proto = out.File
-	file_proto_greeter_proto_goTypes = nil
-	file_proto_greeter_proto_depIdxs = nil
+	File_proto_greeterDua_proto = out.File
+	file_proto_greeterDua_proto_goTypes = nil
+	file_proto_greeterDua_proto_depIdxs = nil
 }

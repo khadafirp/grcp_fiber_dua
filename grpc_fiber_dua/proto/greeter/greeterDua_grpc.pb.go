@@ -2,7 +2,7 @@
 // versions:
 // - protoc-gen-go-grpc v1.5.1
 // - protoc             v6.32.1
-// source: proto/greeter.proto
+// source: proto/greeterDua.proto
 
 package greeter
 
@@ -19,7 +19,7 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	BarangService_AllBarang_FullMethodName = "/greeter.BarangService/AllBarang"
+	BarangService_AllBarang_FullMethodName = "/greeterDua.BarangService/AllBarang"
 )
 
 // BarangServiceClient is the client API for BarangService service.
@@ -108,7 +108,7 @@ func _BarangService_AllBarang_Handler(srv interface{}, ctx context.Context, dec 
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var BarangService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "greeter.BarangService",
+	ServiceName: "greeterDua.BarangService",
 	HandlerType: (*BarangServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -117,5 +117,5 @@ var BarangService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "proto/greeter.proto",
+	Metadata: "proto/greeterDua.proto",
 }
