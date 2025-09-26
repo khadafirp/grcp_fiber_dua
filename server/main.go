@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/khadafirp/grpc_fiber_dua/grpc_fiber_dua/proto/greeter"
+	"github.com/khadafirp/grpc_fiber_dua/github.com/khadafirp/grpc_fiber_dua/proto/greeter"
 
 	"google.golang.org/grpc"
 )

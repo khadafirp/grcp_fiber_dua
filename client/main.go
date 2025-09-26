@@ -5,9 +5,8 @@ import (
 	"log"
 	"time"
 
-	pb "github.com/khadafirp/grpc_fiber_dua/grpc_fiber_dua/proto/greeter"
-
 	"github.com/gofiber/fiber/v2"
+	"github.com/khadafirp/grpc_fiber_dua/github.com/khadafirp/grpc_fiber_dua/proto/greeter"
 	"google.golang.org/grpc"
 )
 
@@ -20,14 +19,14 @@ func StartClient() {
 		log.Fatalf("failed to connect to gRPC server: %v", err)
 	}
 	defer conn.Close()
-	client := pb.NewBarangServiceClient(conn)
+	client := greeter.NewBarangServiceClient(conn)
 
 	app := fiber.New()
 
 	app.Get("/hello/:name", func(c *fiber.Ctx) error {
 		name := c.Params("name")
 
-		res, err := client.AllBarang(context.Background(), &pb.BarangRequest{Name: name})
+		res, err := client.AllBarang(context.Background(), &greeter.BarangRequest{Name: name})
 		if err != nil {
 			return c.Status(500).SendString("gRPC error: " + err.Error())
 		}

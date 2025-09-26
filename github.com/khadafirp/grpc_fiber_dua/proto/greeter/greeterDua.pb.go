@@ -120,7 +120,7 @@ const file_proto_greeterDua_proto_rawDesc = "" +
 	"\vBarangReply\x12\x18\n" +
 	"\amessage\x18\x01 \x01(\tR\amessage2P\n" +
 	"\rBarangService\x12?\n" +
-	"\tAllBarang\x12\x19.greeterDua.BarangRequest\x1a\x17.greeterDua.BarangReplyB\x1eZ\x1cgrpc_fiber_dua/proto/greeterb\x06proto3"
+	"\tAllBarang\x12\x19.greeterDua.BarangRequest\x1a\x17.greeterDua.BarangReplyB3Z1github.com/khadafirp/grpc_fiber_dua/proto/greeterb\x06proto3"
 
 var (
 	file_proto_greeterDua_proto_rawDescOnce sync.Once
